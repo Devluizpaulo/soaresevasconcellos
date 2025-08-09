@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publicação de Site — soaresevasconcellos.com.br</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f5f5; font-family:Arial, sans-serif;">
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td align="center" style="padding:20px;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="700" style="background:#ffffff; border-radius:8px; overflow:hidden;">
+        
+        <!-- Cabeçalho -->
+        <tr>
+            <td style="background-color:#1e3a8a; color:#ffffff; padding:20px; font-size:20px; font-weight:bold;">
+                Fênix Solutions & Build — Publicação de site
+            </td>
+        </tr>
+
+        <!-- Corpo -->
+        <tr>
+            <td style="padding:20px; color:#333333; font-size:15px; line-height:1.5;">
+                <p><strong>Publicação de site — soaresevasconcellos.com.br</strong></p>
+                <p>Olá Dr. Fernando Vasconcellos e Dra. Mariana Soares,</p>
+                <p>Seu site está pronto para publicação. Abaixo seguem as orientações para uso, implementação e configuração do Google Tag Manager.</p>
+
+                <h3>O que será publicado</h3>
+                <ul>
+                    <li>Arquivos: index.html, style.css, script.js, imagens (logo, ícones, fotos dos advogados) e favicon.ico.</li>
+                    <li>SEO básico, Open Graph/Twitter, botão do WhatsApp e menu já configurados.</li>
+                    <li>Seção de depoimentos com 3 comentários naturais sobre os advogados.</li>
+                    <li>Áreas de atuação: Direito Civil, Direito de Família, Direito do Consumidor e Direito Trabalhista.</li>
+                </ul>
+
+                <h3>Como publicar (você mesmo)</h3>
+                <ol>
+                    <li>Faça backup do site atual (se houver).</li>
+                    <li>Acesse sua hospedagem (cPanel ou similar) e abra o Gerenciador de Arquivos.</li>
+                    <li>Vá até a pasta pública do domínio (geralmente public_html ou www).</li>
+                    <li>Envie TODOS os arquivos do projeto para essa pasta, mantendo a mesma estrutura.</li>
+                    <li>Ative/valide o HTTPS (certificado SSL) no painel da hospedagem.</li>
+                    <li>Limpe o cache da hospedagem/CDN e teste o site em aba anônima.</li>
+                </ol>
+
+                <h3>Como publico para você</h3>
+                <p>Se preferir, eu faço a publicação inicial. Para isso, envie os acessos do domínio/DNS e da hospedagem (ou informe o contato do suporte).</p>
+
+                <h3>DNS (se precisar apontar)</h3>
+                <ul>
+                    <li>A (raiz @) → IP do servidor da sua hospedagem.</li>
+                    <li>CNAME (www) → host da sua hospedagem (ou IP, conforme provedor).</li>
+                    <li>Depois, forçar redirecionamento para HTTPS.</li>
+                </ul>
+
+                <h3>Configuração do Google Tag Manager</h3>
+                <p><strong>IMPORTANTE:</strong> O código do GTM está comentado no site. Para ativá-lo:</p>
+                <ol>
+                    <li>Acesse <a href="https://tagmanager.google.com/" target="_blank">tagmanager.google.com</a> e faça login.</li>
+                    <li>Crie uma nova conta (se não tiver) ou use uma existente.</li>
+                    <li>Crie um novo container para o site "soaresevasconcellos.com.br".</li>
+                    <li>Copie o ID do container (formato: GTM-XXXXXXX).</li>
+                    <li>No arquivo index.html, localize as seguintes linhas:</li>
+                    <ul>
+                        <li><strong>Linha 11:</strong> <code>})(window,document,'script','dataLayer','GTM-XXXXXXX');</code></li>
+                        <li><strong>Linha 26:</strong> <code>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"</code></li>
+                    </ul>
+                    <li>Substitua "GTM-XXXXXXX" pelo seu ID real do container em ambas as linhas.</li>
+                    <li>Remova os comentários <!-- e --> das linhas 5-12 e 20-24 para ativar o código.</li>
+                </ol>
+
+                <h3>Estrutura do código GTM no site</h3>
+                <p>O código está nas seguintes posições no index.html:</p>
+                <ul>
+                    <li><strong>Head (linhas 5-12):</strong> Script de carregamento do GTM</li>
+                    <li><strong>Body (linhas 20-24):</strong> Noscript para casos sem JavaScript</li>
+                </ul>
+
+                <h3>O que conferir após publicar</h3>
+                <ul>
+                    <li>https://www.soaresevasconcellos.com.br/ abre normalmente.</li>
+                    <li>Favicon aparece.</li>
+                    <li>Botão do WhatsApp abre a conversa no número correto (11 98339-6504).</li>
+                    <li>Navegação por âncoras (Início, Áreas, Sobre, Depoimentos, Contato) funcionando.</li>
+                    <li>Imagens dos advogados carregam corretamente.</li>
+                    <li>Depoimentos aparecem com os 3 comentários atualizados.</li>
+                </ul>
+
+                <h3>Alterações de conteúdo</h3>
+                <p>Textos do hero, telefone, imagem de destaque, meta description e depoimentos podem ser ajustados a qualquer momento. Envie as revisões e eu aplico.</p>
+
+                <h3>Responsabilidade sobre conteúdo</h3>
+                <p>O arquivo é de uso e guarda do cliente. A responsabilidade por conteúdo, direitos autorais, sigilo profissional e LGPD é exclusivamente do cliente. Não publique arquivos sensíveis na pasta pública do site. Guarde em ambiente seguro (ex.: armazenamento interno/drive com acesso restrito).</p>
+
+                <h3>Manutenção</h3>
+                <p>Inclui: publicação inicial e pequenos ajustes em até 7 dias após a entrada no ar.</p>
+                <p>Não inclui: hospedagem/e-mails, renovações de SSL ou mudanças estruturais recorrentes. Posso enviar proposta de plano de manutenção, se desejar.</p>
+
+                <h3>Confirmação necessária</h3>
+                <ul>
+                    <li>Provedor de hospedagem e/ou acessos (ou contato do suporte).</li>
+                    <li>Dados do DNS (ou quem gerencia).</li>
+                    <li>E-mails que deseja exibir no site.</li>
+                    <li>Se deseja trocar a imagem de compartilhamento (recomendo 1200×630).</li>
+                    <li>ID do Google Tag Manager (se já tiver uma conta).</li>
+                </ul>
+
+                <h3>Arquivo</h3>
+                <p>Para acessar o arquivo do projeto, clique no botão abaixo:</p>
+                <p style="text-align:center; margin:20px 0;">
+                    <a href="https://drive.google.com/file/d/1-UdSLEUUZeVk-f7Jj4OB2du03sUjxSnr/view?usp=drive_link"
+                       style="background-color:#28a745; color:#ffffff; padding:12px 20px; text-decoration:none; border-radius:6px; font-weight:bold;">
+                       📂 Abrir no Google Drive
+                    </a>
+                </p>
+
+                <hr style="border:none; border-top:1px solid #ddd; margin:30px 0;">
+
+                <p>Atenciosamente,</p>
+                <p><strong>Luiz Paulo</strong><br>
+                   Dev Fullstack — Responsável pelo projeto<br>
+                   Fênix Solutions & Build — <a href="https://fenixsb.vercel.app/" target="_blank">fenixsb.vercel.app</a><br>
+                   📱 (11) 94848-6470<br>
+                   ✉️ <a href="mailto:fenixsolutionsbuild@gmail.com">fenixsolutionsbuild@gmail.com</a>
+                </p>
+            </td>
+        </tr>
+
+        <!-- Rodapé -->
+        <tr>
+            <td style="background-color:#f0f0f0; color:#666666; padding:15px; text-align:center; font-size:12px;">
+                © Fênix Solutions & Build — Desenvolvimento web
+            </td>
+        </tr>
+    </table>
+</td>
+</tr>
+</table>
+
+</body>
+</html> 

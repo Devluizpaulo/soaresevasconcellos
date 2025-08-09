@@ -467,7 +467,7 @@ footer {
 }
 .hero-logo-col {
   flex: 1 1 0;
-  width: 50%;
+  width: 60%;
   min-width: 0;
   max-width: 720px;
   display: flex;
@@ -1520,3 +1520,82 @@ img:hover, .img-hover:hover, .sobre-img img:hover, .hero-logo-img:hover, .area-c
     margin: 8px 0;
   }
 } 
+
+/* Depoimentos */
+.depoimentos-section {
+  background: #ffffff;
+  padding: 64px 0 40px 0;
+}
+.depoimentos-header { text-align: center; }
+.depoimentos-title {
+  text-align: center;
+  color: var(--azul-escuro);
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  font-family: 'Mongolian Baiti', serif;
+}
+.depoimentos-subtitle {
+  color: #6b7280;
+  margin: 0 auto 18px auto;
+  max-width: 680px;
+  font-size: 1rem;
+}
+.rating-badge {
+  display: inline-block;
+  margin: 8px auto 6px auto;
+  padding: 6px 14px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #d97706;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 999px;
+}
+.stars { color: #f59e0b; font-size: 24px; letter-spacing: 3px; }
+.stars.small { font-size: 16px; letter-spacing: 2px; }
+.rating-caption { color: #6b7280; margin: 6px 0 8px 0; font-size: 0.98rem; }
+.google-text { font-weight: 800; letter-spacing: 1px; margin-bottom: 18px; }
+.google-text .g { color: #4285F4; }
+.google-text .o1 { color: #EA4335; }
+.google-text .o2 { color: #FBBC05; }
+.google-text .g2 { color: #4285F4; }
+.google-text .l { color: #34A853; }
+.google-text .e { color: #EA4335; }
+.google-text.small { font-size: 0.9rem; margin: 4px 0 0 0; }
+.depoimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.depoimento-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 18px 18px 16px 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+.depoimento-header { display:flex; flex-direction:column; align-items:center; gap:4px; }
+.depoimento-divider { height:1px; background:#e5e7eb; margin:12px 0; }
+.depoimento-text {
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0 0 10px 0;
+}
+.depoimento-nome {
+  display: block;
+  color: var(--azul-escuro);
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+@media (max-width: 600px) {
+  .depoimentos-title {
+    font-size: 1.5rem;
+  }
+  .depoimento-text {
+    font-size: 0.98rem;
+  }
+}
